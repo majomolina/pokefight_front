@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export  const  get_pokeList =async ()=>{
-    return axios.get(`http://localhost:3000/api/pokemon`)
+    return axios.get(`https://pokefight-fi1z.vercel.app/api/pokemon`)
     .then((response) =>{
         if(response.data){
             return (response.data)
@@ -11,7 +11,7 @@ export  const  get_pokeList =async ()=>{
 
 
 export  const  get_pokeListbyid =async (id)=>{
-    return axios.get(`http://localhost:3000/api/pokemon/${id}`)
+    return axios.get(`https://pokefight-fi1z.vercel.app/api/pokemon/${id}`)
     .then((response) =>{
         if(response.data){
             return (response.data)
@@ -21,7 +21,7 @@ export  const  get_pokeListbyid =async (id)=>{
 
 
 export  const  get_pokeListbyinfo =async (id, info)=>{
-    return axios.get(`http://localhost:3000/api/pokemon/${id}/${info}`)
+    return axios.get(`https://pokefight-fi1z.vercel.app/api/pokemon/${id}/${info}`)
     .then((response) =>{
         if(response.data){
             return (response.data)
